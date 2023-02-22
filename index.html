@@ -5,26 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="./css/style.css">
 
   <title>Hotel Amerian</title>
 </head>
 
 <body>
-  <div class="gridcontainer">
-    <nav>
-      <div class="logo">
-        <img src="./imagenes/logotulio.png" alt="logo">
-      
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="./pages/servicios.html">servicios</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./pages/Nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/otrosservicios.html">Otros servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pages/contacto.html">contacto</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled">Home</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
       </div>
-      <ul>
-        <li> <a href="./index.html">Inicio</a></li>
-        <li><a href="./pages/servicios.html">Servicios</a></li>
-        <li> <a href="./pages/Nosotros.html">Nosotros</a></li>
-        <li> <a href="./pages/otrosservicios.html">Otros Servicios</a></li>
-        <li> <a href="./pages/contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
+    </div>
+  </nav>
     <main>
       <section class="hero">
         <h1>Hotel Amerian</h1>
@@ -32,36 +48,52 @@
           Button
       </button>
         <img src="./image/habitacion.jpg" alt="logo">
-       
-      </section>
-      <div class="habitacion">
-        <h4>Habitaciones</h4>
-        <div class="card">
-          <div class="card-img"> <img src="./image/imagen2.jpg" alt="habitacion">
-          </div>
-          <div class="card-info">
-            <p class="text-title">Habitación Housing</p>
-            <p class="text-body">Lorem Ipsum dolor sit amet</p>
-            <button class="card-button">Ver</button>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-img"><img src="./image/imagen3.jpg" alt="habitacion"></div>
-          <div class="card-info">
-            <p class="text-title">Habitación King</p>
-            <p class="text-body">Lorem Ipsum dolor sit amet</p>
-            <button class="card-button">Ver</button>
+        </section>
+      <div class=habitaciones><h2>Habitaciones</h2></div>
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./image/imagen2.jpg" class="card-img-top" alt="...">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Housing</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="./pages/servicios.html" class="btn btn-primary">Ver</a>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-img"><img src="./image/imagen4.jpg" alt="habitacion"></div>
-          <div class="card-info">
-            <p class="text-title">Habitación Doble</p>
-            <p class="text-body">Lorem Ipsum dolor sit amet</p>
-            <button class="card-button">Ver</button>
+        <div class="col-sm-6">
+          <img src="./image/imagen4.jpg" class="card-img-top" alt="...">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Habitacion compartida</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="./pages/servicios.html" class="btn btn-primary">Ver</a>
+            </div>
           </div>
         </div>
-
+      </div>
+     
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="./image/imagen2.jpg" class="card-img-top" alt="...">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Housing</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="./pages/servicios.html" class="btn btn-primary">Ver</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <img src="./image/imagen6.jpg" class="card-img-top" alt="...">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Doble King</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="./pages/servicios.html" class="btn btn-primary">Ver</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="lugares__cercanos">
         <h4>Lugares cercanos del Hotel Amerian</h4>
@@ -94,6 +126,8 @@
 
   </footer>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"></script>
 
 </body>
 
